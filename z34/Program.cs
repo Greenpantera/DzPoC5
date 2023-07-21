@@ -26,4 +26,4 @@ int[] MakeNewArray(int size, int beginValue, int endValue)
 
 int[]array=MakeNewArray(10,100,1000);
 int count=CountDelNaDwa(array);
-Console.WriteLine($"В масиве [{string.Join(",", array)}] количество чётных чисел {count}");
+Console.WriteLine($"В масcиве [{string.Join(",", array)}] количество чётных чисел {count}");
