@@ -4,7 +4,7 @@
 int SumElement(int[]array)
 {
     int sum=0;
-    for(int i=0; i<array.Length; i+=2) //Нечётная позици будет равна i=0, так как по человеческой версии тоит на нечётной позиции
+    for(int i=1; i<array.Length; i+=2)
     {
         sum+=array[i];  
     }
@@ -22,6 +22,6 @@ int[] MakeNewArray(int size, int beginValue, int endValue)
     return array;
 }
 
-int[]array=MakeNewArray(10,1,15);
+int[]array=MakeNewArray(10,-15,15);
 int sum=SumElement(array);
 Console.WriteLine($"В маcсиве [{string.Join(",", array)}] сумма чисел стоящих на нечётных позициях: {sum}");
